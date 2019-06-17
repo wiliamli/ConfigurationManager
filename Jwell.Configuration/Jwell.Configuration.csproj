@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Jwell.Configuration为aspnetcore框架内置的模块，用于获取程序本地与配置中心的配置信息，支持配置动态修改，并实时生效。</Description>
+    <Authors>wangjiwei</Authors>
+    <Company>Jwell</Company>
+    <Product>aspnetcore_framework</Product>
+    <PackageTags>Jwell Configuraion</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Util\ve-7AD.tmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jwell.ConfigurationManager" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
